@@ -15,18 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             `translate3d(${moveX}px, ${moveY}px, 0)`;
     }
 
-    // 用 rAF 优化滚动性能（避免卡）
-    let ticking = false;
 
-    scrollContainer.addEventListener('scroll', function () {
-        if (!ticking) {
-            window.requestAnimationFrame(() => {
-                update();
-                ticking = false;
-            });
-            ticking = true;
-        }
-    });
 });
 if (backIcon) {
     backIcon.addEventListener('click', function () {

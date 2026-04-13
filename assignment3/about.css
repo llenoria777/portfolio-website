@@ -1,0 +1,44 @@
+img{
+    position: fixed;
+    display: block;
+    max-width: 18%;
+    height: auto;
+  
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    margin: 0;
+  }
+  
+  .intro{
+    position: fixed;
+    width: 257px;
+  
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    color: black;
+    font-family: hiragino-kaku-gothic-pron, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+    z-index: 100;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .rain-text{
+    position: absolute;
+    font-size: 18px;
+    transition: transform 0.15s ease-out;
+  }
